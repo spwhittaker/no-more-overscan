@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const ImgContainer = styled.div`
-  width: 35rem;
-  height: 30rem;
-  border: 5px blue solid;
+  width: ${(props) => (props.width ? props.width : "60")}vw;
+  height: ${(props) => (props.height ? props.height : "50")}vw;
+
+  border: 3px gray solid;
   position: relative;
   margin: auto;
 
+  overflow: hidden hidden;
   & > img {
-    width: 100%;
-    height: 100%;
+    width: ${(props) => (props.overscan ? props.overscan + 100 : "100")}%;
+    height: ${(props) => (props.overscan ? props.overscan + 100 : "100")}%;
     object-fit: cover;
     margin: auto;
     text-align: center;
@@ -21,15 +23,4 @@ export const ImgContainer = styled.div`
     right: -9999px;
     margin: auto;
   }
-`;
-
-export const OverscanImgContainer = styled(ImgContainer)`
-  object-fit: none;
-  
- overflow: hidden hidden;
-  & > img {
-   
-    width: 125%;
-    height: 125%;
-    
 `;
