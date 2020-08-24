@@ -1,7 +1,7 @@
 import React from "react";
 import { ImgContainer } from "./Components/ImgContainer";
 import { MainHeading, Subheading } from "./Components/Headings";
-import Slider from "./Components/Slider";
+import { StyledSlider } from "./Components/Slider";
 import Footer from "./Components/Footer";
 import dogPic from "./images/dog.jpg";
 import crtTv from "./images/tv-television-vintage-oldschool.jpg";
@@ -36,13 +36,13 @@ function App() {
         <br />
         If you said the second one, then the TV companies are on to something.
       </p>
-      <Subheading>What is overscan, and why should you hate it?</Subheading>
       <p>
         The two images above are in the same size of box, but the second one is
         25% wider and taller. What this means is you lose all the information
-        around the edges of the picture, such as this good boy's back left paw
-        and his lovely right paw.
+        around the edges of the picture, such as the back left paw and the
+        lovely right ear of the good boy above.
       </p>
+      <Subheading>What is overscan, and why should you hate it?</Subheading>
       <p>
         Back in the day of CRT TVs, there was an actual need to cut off the
         edges of the screen because they would look blurry and horrible. It's
@@ -54,10 +54,10 @@ function App() {
       </ImgContainer>
       <p>
         For whatever reason, when we made the move to digital TVs, this option
-        continued as the standard setting for televisions out of the box.
-        Apparently, if you have two TVs side by side and one has a magnified
-        picture on with the edges cut off, the picture 'pops' more and is more
-        appealing to consumers. That is nonsense.
+        continued as the standard setting for televisions out of the box and its
+        name is <i>overscan</i>. Apparently, if you have two TVs side by side
+        and one has a magnified picture on with the edges cut off, the picture
+        'pops' more and is more appealing to consumers. That is nonsense.
       </p>
       <h3>Loss of information</h3>
       <p>
@@ -74,7 +74,7 @@ function App() {
         how much information is lost on a standard 1080p (1920px*1080px) Full HD
         screen.
       </p>
-      <Slider width="60" height="33.75" />
+      <StyledSlider width="60" height="33.75" />
       <Footer />
     </div>
   );

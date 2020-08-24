@@ -5,6 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to right bottom,
+    #9faec6,
+    #a6add4,
+    #b7aade,
+    #cfa5e0,
+    #eb9dda
+  );
 }
 p {
   padding: 2rem;
