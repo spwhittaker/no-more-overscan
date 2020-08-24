@@ -1,7 +1,12 @@
 {
-  "short_name": "React App",
+  "short_name": "No more Overscan",
   "name": "Create React App Sample",
   "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",

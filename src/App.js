@@ -37,10 +37,11 @@ function App() {
         If you said the second one, then the TV companies are on to something.
       </p>
       <p>
-        The two images above are in the same size of box, but the second one is
-        25% wider and taller. What this means is you lose all the information
-        around the edges of the picture, such as the back left paw and the
-        lovely right ear of the good boy above.
+        The two images above are in the same size of box, but the second one has
+        been stretched 25% wider and taller, with the edges chopped off. What
+        this means is you lose all the information around the edges of the
+        picture, such as the back left paw and the lovely right ear of the good
+        boy above.
       </p>
       <Subheading>What is overscan, and why should you hate it?</Subheading>
       <p>
