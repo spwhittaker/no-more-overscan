@@ -7,11 +7,16 @@ export const ImgContainer = styled.div`
   border: 3px gray solid;
   position: relative;
   margin: auto;
+  @media only screen and (min-width: 10in) {
+    width: ${(props) => (props.width ? props.width / 2 : "30")}vw;
+    height: ${(props) => (props.height ? props.height / 2 : "25")}vw;
+  }
 
   overflow: hidden hidden;
   & > img {
     width: ${(props) => (props.overscan ? props.overscan + 100 : "100")}%;
     height: ${(props) => (props.overscan ? props.overscan + 100 : "100")}%;
+
     object-fit: cover;
     margin: auto;
     text-align: center;

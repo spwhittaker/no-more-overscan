@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export default styled.span`
   display: flex;
-  min-width: 60vw;
-  max-width: 700px;
+
+  max-width: 10in;
   justify-content: space-between;
   margin: auto;
   flex-direction: row;
@@ -11,6 +11,6 @@ export default styled.span`
   > * {
     display: inline;
     color: black;
-    font-weight: lighter;
+    font-weight: bold;
   }
 `;

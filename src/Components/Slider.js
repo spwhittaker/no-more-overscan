@@ -12,17 +12,17 @@ const Slider = ({ height, width, className = "Slider" }) => {
     <div className={className}>
       <FlexSpan>
         <h3>Zoom percentage:</h3>
-        <h3>{overscanVal}%</h3>
-      </FlexSpan>
-      <FlexSpan>
         <input
+          name="overscan-percent"
           type="range"
           value={overscanVal}
           min="0"
           max="200"
           onChange={(e) => setOverscanVal(Number(e.target.value))}
         />
+        <h3>{overscanVal}%</h3>
       </FlexSpan>
+
       <FlexSpan>
         <h3>Amount of the original image still visible:</h3>
         <h3>{remaining.toFixed(2)}%</h3>
