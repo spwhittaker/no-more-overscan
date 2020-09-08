@@ -92,6 +92,7 @@ function App() {
         <CheckerboardContainer>
           <Checkerboard rowNum={8} style={{ display: "inline-block" }} />
           <Checkerboard
+            leftVal={"50vw"}
             style={{ display: "inline-block" }}
             rowNum={8}
             colour1="rgba(255,0,155, 0.5)"
