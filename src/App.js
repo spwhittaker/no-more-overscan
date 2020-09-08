@@ -90,7 +90,7 @@ function App() {
           is on the right.
         </p>
         <CheckerboardContainer>
-          <Checkerboard rowNum={8} style={{ display: "inline-block" }} />
+          <Checkerboard rowNum={8} />
           <Checkerboard
             leftVal={"50vw"}
             style={{ display: "inline-block" }}
@@ -105,13 +105,15 @@ function App() {
           of the picture on each side and stretched the image to fill the
           available space. You'd expect to see something like this.
         </p>
-
-        <Checkerboard />
-        <Checkerboard
-          rowNum={6}
-          colour1="rgba(255,0,155, 0.5)"
-          colour2="rgba(0,255,251, 0.5)"
-        />
+        <CheckerboardContainer>
+          <Checkerboard />
+          <Checkerboard
+            leftVal={"50vw"}
+            rowNum={6}
+            colour1="rgba(255,0,155, 0.5)"
+            colour2="rgba(0,255,251, 0.5)"
+          />
+        </CheckerboardContainer>
 
         <section>
           <h1>Turning off the settings</h1>
