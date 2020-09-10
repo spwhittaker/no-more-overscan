@@ -3,7 +3,8 @@ import { ImgContainer } from "./Components/ImgContainer";
 import { MainHeading, Subheading } from "./Components/Headings";
 import { StyledSlider } from "./Components/Slider";
 import Footer from "./Components/Footer";
-import { Checkerboard, CheckerboardContainer } from "./Components/Checkerboard";
+// import { Checkerboard } from "./Components/Checkerboard";
+import CheckerboardContainer from "./Components/CheckerboardContainer";
 import dogPic from "./images/dog.jpg";
 import crtTv from "./images/tv-television-vintage-oldschool.jpg";
 import simpsons from "./images/frc-e912be841be584ce75702492dda951e3.png";
@@ -78,7 +79,7 @@ function App() {
         <p>
           Have a play with the slider below. It starts at 5% and shows you just
           how much information is lost on a standard 1080p (1920px*1080px) Full
-          HD screen.
+          HD screen.{" "}
         </p>
         <StyledSlider width="60" height="33.75" />
         <hr />
@@ -87,34 +88,33 @@ function App() {
           Imagine your screen is a grid of little squares. For simplicity's
           sake, image it's an 8 by 8 grid, like a chessboard. Your screen is
           represented by the board on the left and the image you want to display
-          is on the right.
+          is on the right. Move the slider across and you can see how every
+          pixel of the image lines up with every pixel of the screen.
         </p>
-        <CheckerboardContainer>
-          <Checkerboard rowNum={8} />
-          <Checkerboard
-            leftVal={"50vw"}
-            style={{ display: "inline-block" }}
-            rowNum={8}
-            colour1="rgba(255,0,155, 0.5)"
-            colour2="rgba(0,255,251, 0.5)"
-          />
-        </CheckerboardContainer>
+        <CheckerboardContainer board2RowNum={8} />
 
         <p>
           Here is a second one. But let's imagine that you've cut off an eighth
           of the picture on each side and stretched the image to fill the
-          available space. You'd expect to see something like this.
+          available space. You'd expect to see something like this. Move the
+          slider over to see what happens when you try to display that 6x6 image
+          on an 8x8 screen.
         </p>
-        <CheckerboardContainer>
-          <Checkerboard />
-          <Checkerboard
-            leftVal={"50vw"}
-            rowNum={6}
-            colour1="rgba(255,0,155, 0.5)"
-            colour2="rgba(0,255,251, 0.5)"
-          />
-        </CheckerboardContainer>
-
+        <CheckerboardContainer board2RowNum={6} />
+        <p>
+          You can see that the images don't line up. If you are watching
+          something that originally had a resolution of 1080p (1920 pixels wide,
+          1080 pixels high, 2073600 pixels total) and you watched it{" "}
+          <i>without</i> overscan on your 1080p TV, the image would be properly
+          displayed, with every one of the 2,073,600 pixels of the image having
+          a corresponding pixel on the screen. However, if overscan <i>were</i>{" "}
+          applied, the TV would have to figure out where to put this new smaller
+          image, and each pixel could no longer be mapped directly into its
+          place on the screen. There are many techniques to smooth out and
+          improve an image with fewer pixels than the screen it's displayed on,
+          but it's a pointless problem to solve when it could be avoided by just
+          not cutting and stretching the image in the first place.
+        </p>
         <section>
           <h1>Turning off the settings</h1>
         </section>

@@ -1,5 +1,8 @@
 const nthChildText = (rowNum) => {
   let text = "";
+  if (rowNum % 2 === 1) {
+    return "div:nth-child(2n + 1)";
+  }
   for (let i = 1; i < rowNum; i++) {
     if (i % 2 === 1) {
       text += `div:nth-child(${2 * rowNum}n + ${i}), `;
