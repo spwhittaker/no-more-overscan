@@ -107,18 +107,23 @@ function App() {
           1080 pixels high, 2073600 pixels total) and you watched it{" "}
           <i>without</i> overscan on your 1080p TV, the image would be properly
           displayed, with every one of the 2,073,600 pixels of the image having
-          a corresponding pixel on the screen. However, if overscan <i>were</i>{" "}
-          applied, the TV would have to figure out where to put this new smaller
-          image, and each pixel could no longer be mapped directly into its
-          place on the screen. There are many techniques to smooth out and
-          improve an image with fewer pixels than the screen it's displayed on,
-          but it's a pointless problem to solve when it could be avoided by just
-          not cutting and stretching the image in the first place.
+          a corresponding pixel on the screen.{" "}
+        </p>
+        <p>
+          However, if overscan <i>were</i> applied, the TV would have to figure
+          out where to put this new smaller image, and each pixel could no
+          longer be mapped directly into its place on the screen. There are many
+          techniques to smooth out and improve an image with fewer pixels than
+          the screen it's displayed on, but it's a pointless problem to solve
+          when it could be avoided by simply not altering the image in the first
+          place.
         </p>
         <section>
           <h1>Turning off the settings</h1>
         </section>
-        <section>BONUS! Extra interpolated frames</section>
+        <section>
+          <h1>BONUS! Extra interpolated frames</h1>
+        </section>
       </main>
       <Footer />
     </div>
