@@ -120,10 +120,14 @@ function App() {
         </p>
         <section>
           <h1>Turning off the settings</h1>
+          <p>
+            Annoyingly, TVs often come with overscan already turned on. I'll
+            give you some advice on how to turn it off.
+          </p>
         </section>
-        <section>
+        {/*         <section>
           <h1>BONUS! Extra interpolated frames</h1>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>
