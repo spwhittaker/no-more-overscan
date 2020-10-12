@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
   flex-wrap: nowrap;
   justify-content: space-between;
   a {
-    color: black;
+    color: teal;
   }
   a:visited {
     color: teal;
@@ -34,7 +34,7 @@ const Footer = () => {
       <p>
         Copyright ©{year}{" "}
         <a
-          href="https://github.com/spwhittaker"
+          href="https://stephenwhittaker.me/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,7 +47,7 @@ const Footer = () => {
       <p>
         Copyright © 2020 - {year}{" "}
         <a
-          href="https://github.com/spwhittaker"
+          href="https://stephenwhittaker.me/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,6 +63,13 @@ const Footer = () => {
         <p>Top of page</p>
       </a>
       <strong>{fullCopyrightText}</strong>
+      <a
+        href="mailto:stephenwhittaker23@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>Contact</p>
+      </a>
     </StyledFooter>
   );
 };

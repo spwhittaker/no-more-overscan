@@ -104,7 +104,7 @@ function App() {
         <p>
           You can see that the images don't line up. If you are watching
           something that originally had a resolution of 1080p (1920 pixels wide,
-          1080 pixels high, 2073600 pixels total) and you watched it{" "}
+          1080 pixels high, 2,073,600 pixels total) and you watched it{" "}
           <i>without</i> overscan on your 1080p TV, the image would be properly
           displayed, with every one of the 2,073,600 pixels of the image having
           a corresponding pixel on the screen.{" "}
@@ -115,19 +115,44 @@ function App() {
           longer be mapped directly into its place on the screen. There are many
           techniques to smooth out and improve an image with fewer pixels than
           the screen it's displayed on, but it's a pointless problem to solve
-          when it could be avoided by simply not altering the image in the first
-          place.
+          when it could be avoided by simply{" "}
+          <strong>not altering the image in the first place</strong>.
         </p>
         <section>
           <h1>Turning off the settings</h1>
           <p>
-            Annoyingly, TVs often come with overscan already turned on. I'll
-            give you some advice on how to turn it off.
+            Annoyingly, TVs often come with overscan already turned on. Here's
+            how to turn it off. The options on your TV may have slightly
+            different names.
+          </p>
+          <ul>
+            <li>
+              Go to Menu/Settings, then Picture settings. If all the options are
+              greyed out, you may need to set up Custom settings. If almost all
+              the settings are locked, it is possible your TV is in 'hotel
+              mode', which as you might have guessed is used by hotels to stop
+              guests messing with the TV. You can usually find instructions on
+              how to turn it off by Googling '[brand of TV] hotel mode unlock'
+              (it's generally a long series of button presses on the remote).
+            </li>
+            <li>
+              Find 'Zoom mode', which will probably be set to 'Auto'. You don't
+              want Auto, that has overscan. Cycle through the options until you
+              see 'Full', and then you will see the whole image on your screen!
+              If you have a standard widescreen TV, sometimes the option that
+              you want is '16:9', but compare to see if there is also a 'Full'
+              option as the 16:9 option often has overscan as well.
+            </li>
+          </ul>
+          <p>
+            On some TVs, there is no way to turn off overscan. You can try to
+            correct for this on some devices such as games consoles, which will
+            have the option to squash the image into the centre of the screen to
+            account for what is cut off at the edges. It isn't as good as
+            turning the overscan off, since you are still getting stretched
+            pixels and a lower resolution image, but it's better than nothing!
           </p>
         </section>
-        {/*         <section>
-          <h1>BONUS! Extra interpolated frames</h1>
-        </section> */}
       </main>
       <Footer />
     </div>
