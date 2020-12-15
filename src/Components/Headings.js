@@ -26,15 +26,27 @@ export const MainHeading = styled.h1`
 `;
 export const Subheading = styled.h2`
   color: white;
-  padding: auto;
+  /* padding: 1rem 4rem 1rem 1rem;
+
   width: 100vw;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: calc(50% - 50vw);
+ */
+
+  width: 95vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  padding-left: 1rem;
+  padding-right: 5vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 3rem;
   background: #f332c7;
-  padding: 1rem;
+  overflow-x: scroll;
   text-decoration: underline;
 `;

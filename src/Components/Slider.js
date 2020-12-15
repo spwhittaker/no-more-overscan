@@ -50,8 +50,14 @@ const Slider = ({ height, width, className = "Slider" }) => {
 
 export const StyledSlider = styled(Slider)`
   padding: 2em;
+
   margin: 1em;
 
   border: 5px black solid;
+  @media only screen and (max-width: 500px) {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border: 2 black solid;
+  }
   border-radius: 2px;
 `;

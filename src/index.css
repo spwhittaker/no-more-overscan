@@ -18,9 +18,14 @@ p {
   padding: 0 2rem;
 }
 main {
-  width: 15in;
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 15in;
   margin: auto;
+}
+@media only screen and (max-width: 700px) {
+  main {
+    width: 95vw;
+  }
 }
 .App {
   margin: 0;
