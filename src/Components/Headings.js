@@ -34,12 +34,12 @@ export const Subheading = styled.h2`
   margin-left: calc(50% - 50vw);
  */
 
-  width: 95vw;
+  width: 92vw;
   position: relative;
   left: 50%;
   right: 50%;
   padding-left: 1rem;
-  padding-right: 5vw;
+  padding-right: 8vw;
   margin-left: -50vw;
   margin-right: -50vw;
 
@@ -47,6 +47,6 @@ export const Subheading = styled.h2`
   font-size: 1.5rem;
   line-height: 3rem;
   background: #f332c7;
-  overflow-x: scroll;
+  overflow-x: hidden;
   text-decoration: underline;
 `;
